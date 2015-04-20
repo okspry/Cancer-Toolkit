@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body width="960" style="margin-left: 120px; margin-top: 80px">
+    <div class="container-fluid col-md-9">
+
+      <h2>Document Treatment</h2>
+      <form data-toggle="validator" role="form">
+
+        <div class="form-group">
+          <label for="cancer-type">Type of Cancer (required)</label>
+          <select class="form-control" id="cancer-type" required>
+            <option value="Colon Cancer">Colon Cancer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cancer-stage">Stage of Cancer (required)</label>
+          <select class="form-control" id="cancer-stage" required>
+            <option>Cancer Stage 2</option>
+          </select>
+          <!-- <span class="help-block with-errors">Please, do the thing</span> -->
+        </div>
+
+        <div class="form-group">
+          <label for="date-of-diagnosis">Date of Diagnosis</label>
+          <input type="date" class="form-control" id="date-of-diagnosis">
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="predisposition">Do you have a genetic or predisposing abnormality? (required)</label>
+              <br>
+              <div class="btn-group" data-toggle="buttons" required>
+                <label class="btn btn-primary active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked>I'm not sure
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> No
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="options" id="option3" autocomplete="off"> Yes
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="specific-predisposition">If yes, what?</label>
+              <select class="form-control" id="specific-predisposition" required disabled>
+                <option></option>
+                <option>Inflammatory Bowel Disease</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="well">
+          <label>Primary Care Doctor's Information</label>
+          <div class="form-group">
+            <label for="pcp-name">Name</label>
+            <input type="text" class="form-control" id="pcp-name" placeholder="First Last">
+          </div>
+          <div class="form-group">
+            <label for="pcp-number">Phone Number</label>
+            <input type="phone" class="form-control" id="pcp-number" placeholder="(555)555-55555">
+          </div>
+          <div class="form-group">
+            <label for="pcp-email">Email</label>
+            <input type="email" class="form-control" id="pcp-email" placeholder="jackrobin21@health.org">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+          <button type="button" class="btn">Cancel Changes</button>
+          <button type="button" class="btn btn-danger pull-right">Delete Record</button>
+        </div>
+
+      </form>
+    </div>
+    <script src="vendor/jquery-min.js" type="text/javascript"></script>
+    <script src="vendor/gsap/TweenMax.js" type="text/javascript"></script>
+    <script src="vendor/bootstrap.min.js" type="text/javascript"></script>
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

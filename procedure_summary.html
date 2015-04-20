@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body width="960" style="margin-left: 120px; margin-top: 80px">
+    <div class="container-fluid col-md-9">
+      <h2>Document a Procedure</h2>
+      <form data-toggle="validator" role="form">
+
+        <div class="form-group">
+          <label for="date-of-surgery">Date of Surgery</label>
+          <input type="date" class="form-control" id="date-of-surgery">
+        </div>
+
+        <div class="well">
+          <label>Institution's Information</label>
+          <div class="form-group">
+            <label for="institution-name">Hospital or Clinic Name</label>
+            <input type="text" class="form-control" id="institution-name" placeholder="Hospital Health">
+          </div>
+          <div class="form-group">
+            <label for="institution-town">City/Town</label>
+            <input type="text" class="form-control" id="institution-town" placeholder="Townsville">
+          </div>
+          <div class="form-group">
+            <label for="institution-state">State</label>
+            <select class="form-control" id="institution-state">
+              <option>IN</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="surgery-type">Type of surgery</label>
+              <div required>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="options" id="option1" autocomplete="off"> Colostomy or ileostomy
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="options" id="option2" autocomplete="off"> Lymph node removal/dissection 
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="options" id="option3" autocomplete="off"> Right colectomy
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="options" id="option3" autocomplete="off"> Sigmoid colectomy
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="options" id="option3" autocomplete="off"> Low anterior resection
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="options" id="option3" autocomplete="off"> Abdominal perineal resection 
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="options" id="option3" autocomplete="off"> Subtotal colectomy  
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="options" id="option3" autocomplete="off"> Total proctocolectomy 
+                  </label>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <input type="checkbox" aria-label="Other surgery type">
+                  </span>
+                  <input type="text" class="form-control" aria-label="Other surgery type">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="well">
+          <label>Surgeon's Information</label>
+          <div class="form-group">
+            <label for="pcp-name">Name</label>
+            <input type="text" class="form-control" id="pcp-name" placeholder="First Last">
+          </div>
+          <div class="form-group">
+            <label for="pcp-number">Phone Number</label>
+            <input type="phone" class="form-control" id="pcp-number" placeholder="(555)555-55555">
+          </div>
+          <div class="form-group">
+            <label for="pcp-email">Email</label>
+            <input type="email" class="form-control" id="pcp-email" placeholder="jackrobin21@health.org">
+          </div>
+        </div>
+
+        <div class="form-group clearfix">
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+          <button type="button" class="btn">Cancel Changes</button>
+          <button type="button" class="btn btn-danger pull-right">Delete Record</button>
+        </div>
+
+      </form>
+    </div>
+    <script src="vendor/jquery-min.js" type="text/javascript"></script>
+    <script src="vendor/gsap/TweenMax.js" type="text/javascript"></script>
+    <script src="vendor/bootstrap.min.js" type="text/javascript"></script>
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

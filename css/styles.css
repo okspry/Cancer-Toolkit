@@ -1,0 +1,33 @@
+.button-div {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+ul.nav.nav-tabs {
+	margin-bottom: 10px;
+}
+
+.modal-backdrop {
+	z-index: 1;
+}
+
+.modal-dialog {
+	z-index: 1000;
+}
+
+button.add-treatment-btn {
+	margin-top: 15px;
+}
+
+li.plain-list-item {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+li.plain-list-item .pull-right {
+	margin-top: 15px;
+}
+
+li.media {
+	margin-bottom: -30px;
+}
